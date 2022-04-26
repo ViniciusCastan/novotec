@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<title> Arduíno - Página informacional </title>
+<head>
+    <meta charset="utf-8">
+	<meta name="author"content="Vinicius">
+	<meta name="descripton" content="Página informacional">
+	<meta name="keywords" content="html, parágrafo">
+</head>
+<style>
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+}  
+
+h1 {
+  text-align: center;
+  color: #2980B9;
+  font-family: "Arial Rounded MT";
+}
+
+h3 {
+  text-align: center;
+  color: #3498DB;
+  font-family: "Arial Rounded MT";  
+}
+
+p  {
+  margin-right: 200px;
+  margin-left: 200px;
+  font-family: "Comic Sans MS Regular";
+  text-indent: 30px;
+}
+strong {
+  color: #50C878;
+}
+
+
+pre {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #FA8072;
+  width: 60%;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 28px;
+	
+}
+
+ul  {
+  text-align: left;
+  margin-left: 205px;
+}
+
+h3.lista  {
+  color: #0F52BA;
+  text-align: left;
+  text-indent: 230px;
+}
+
+p.listah3  {
+  font-family: "Comic Sans MS Regular";
+}
+
+img  {
+  display: block;
+  margin-left: 220px;
+}
+  
+img.central {
+  display: block;
+  margin-left: 580px;
+}  
+
+figcaption {
+  text-indent: 600px;
+}  
+</style>
+<body>
+<h1> Arduíno e todo seu conceito em forma textual </h1>
+<br>
+<h3> O que é um Arduino? </h3>
+<p>Falando de modo simples, o <strong>Arduino</strong> é um conjunto de ferramentas de prototipagem eletrônica <em>open source</em> que visa tornar mais fácil a criação de aparelhos eletrônicos. 
+Além de oferecer uma placa controladora, ele possui também um ambiente de desenvolvimento, <ins>por isso é considerado uma plataforma</ins> e não simplesmente um <em>hardware</em>. 
+Basta ligar a placa ao computador e já é possível escrever códigos para o Arduino no ambiente de desenvolvimento do software (através da <strong>linguagem C/C++</strong>). </p>
+
+<p>A placa básica do <strong>Arduino</strong> possui uma série de sensores, o que permite a integração com outros dispositivos e a interação com outros aparelhos. 
+Ou seja, ele pode funcionar através da sua própria interface ou interagir com outros aplicativos instalados no computador. 
+Isto permite que o desenvolvedor crie tanto <em>gadgets</em> simples como robustos. Além disso, é possível comprar a placa original (com os circuitos “do zero”) ou optar por uma pré-montada, 
+com os circuitos já interligados. </p>
+
+<br>
+
+<h3> Como se programa as funções de um Arduino? </h3>
+<p><ins>A linguagem de programação utilizada para programar o <strong>Arduino</strong> é a <strong>linguagem C++</strong> com algumas pequenas modificações.</ins> 
+Essa linguagem de programação pode se dizer que, se não for a linguagem de programação mais poderosa é uma delas, porque essa linguagem não tem limitações, com <strong>C++</strong> 
+consegue-se o acesso a todo o <em>hardware</em> do aparelho, é muito utilizada em computadores, mas agora também no Arduino.</p>
+
+<p> O <strong>C++</strong> é uma linguagem rápida e é relativamente fácil de se compreender. Alguns podem dizer que não é tão simples de compreender como outras linguagens mais 
+modernas atualmente, mas a comparação que faço é com a linguagem <strong>ASM</strong> que é a linguagem mais perto da linguagem de máquina de modo simples e mais "humano" possível.
+Para se ter uma base de comparação,  alguns microcontroladores PICs mais limitados eram e ainda são programados em linguagem ASM porque o hardware é muito mais simples exige um código mais enxuto, e isso só é conseguido com 
+linguagem ASM. </p>
+
+<p> No Arduino não é necessário utilizar linguagem <strong>ASM</strong>, porque  o processador tem mais capacidade, e nos da o luxo de gastar um pouco mais de recursos 
+de memória e processamento para manter o código mais fácil de entender. </p>
+
+<br>
+
+<p> Segue abaixo um exemplo de código utilizado em um Arduino, com a função de fazer um led piscar: </p>
+<p> // A função <em>setup</em> é a primeira função que é executada quando o Arduino é executado, serve para configurar o 
+Arduino com a informação que o pino escolhido será utilizado para saída, colocamos saída porque o Arduino colocará tensão no pino para acender o <em>LED</em>, 
+então ele envia, ou coloca para fora uma tensão, por isso é saída. </p>
+
+<hr>
+<pre> void setup() {
+  // inicialize o pino digital aqui chamado de LED_BUILTIN como uma saída.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+//Essa função abaixo, é executada infinitamente, fazendo com que o led fique piscando sem parar.
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // Acende o LED ao colocar o pino em nivel alto (HIGH), eletricamente significa colocar tensão no pino .
+  delay(1000);                       // espera um segundo, o led continua acesso nesse momento...
+  digitalWrite(LED_BUILTIN, LOW);    // Apaga o LED colocando o pino em nível de tensão baixo (LOW), eletricamente significa retirar a tensão do pino.
+  delay(1000);                       // espera um segundo novamente, o led continua apagado nesse momento...
+
+// Nesse momento chegou ao fim do programa. No Arduino a função loop() é reiniciada automaticamente
+}
+</pre>
+<hr>
+
+<br>
+
+<h3> Para que serve o Arduino? </h3>
+<p> O <strong>Arduino</strong> serve para ensinar pessoas a programar, para criar projetos de eletrônica, projetos robóticos, projetos para internet, 
+são  infinitas possibilidades, através dos devidos acessórios, como <em>displays</em>, teclados, módulos de relés, <em>gsm</em>, <em>rf</em> entre outros pode-se se controlar de tudo,  
+motores, abertura de portas, cortinas, fechaduras, carrinhos, monitoramento de sensores de nível de água, gás, calor, pressão, som, etc... </p>
+
+<br>
+
+<h3> Quais equipamentos são necessários para utilizar um Arduino? </h3>
+<p> Para se utilizar um <strong>Arduino</strong>, você normalmente precisará dos seguintes equipamentos: </p>
+</ol>
+<ul type="disc">
+    <li> Placa do Arduino </li>
+	<li> Cabo <em>USB</em> </li>
+	<li> Fonte de Tensão </li>
+	<li> Computador para programação do Arduino </li>
+</ul>
+
+<br>
+
+<h3> Quais são os diversos tipos de Arduinos? </h3>
+<p> Há uma diversidade de modelos para cada necessidade do usuário. Surpreendentemente tem modelo que é do tamanho de um polegar, 
+tem modelo que é circular e tem um modelo que parece um controle de vídeo game. Confira alguns dos modelos aqui embaixo: </p>
+
+<br>
+
+<h3 class="lista"> 1. Arduino Pro Mini </h3>
+<p class="listah3"> O modelo <strong>Pro Mini</strong> é destinado a usuários avançados que exigem flexibilidade, baixo custo e pequeno tamanho. 
+Ele vem com o mínimo de componentes (sem <em>USB</em> ou cabeçalhos de pinos) para manter o custo baixo. Certamente é uma boa escolha para quem quer deixá-lo embutido em um projeto. </p>
+<img src="PROMINI.jpg" width="300" height="300">
+
+<br>
+
+<h3 class="lista"> 2. Arduino Fio </h3>
+<p class="listah3"> O modelo <strong>Fio</strong> é destinado para aplicações <em>wireless</em> (sem fio). Ele tem conexões para uma bateria de polímero de lítio, 
+inclui um circuito de recarga <em>USB</em> e um conector para módulo <em>XBee</em> está disponível na parte inferior da placa. </p>
+<img src="FIO.jpg" width="300" height="300"> 
+
+<br>
+
+<h3 class="lista"> 3. Arduino Nano </h3>
+<p class="listah3"> O modelo <strong>Nano</strong> é ideal para projetos compactos. Facilmente notamos que esse modelo tem o seu tamanho reduzido quando comparado aos demais. </p>
+<img src="NANO.jpg" width="300" height="300"> 
+
+<br>
+
+<h3 class="lista"> 4. Arduino Micro </h3>
+<p class="listah3"> O modelo <strong>Micro</strong> é parecido com o modelo <strong>Leonardo</strong> pois ambos têm a comunicação <em>USB</em> direta com o microcontrolador, 
+portanto não é necessário um processador secundário. Quando conectado ao computador, o <strong>Arduino Micro</strong> é identificado como se fosse um <ins><em>mouse</em> ou um teclado.</ins> </p>
+<img src="MICRO.jpg" width="300" height="300"> 
+
+<br>
+
+<h3 class="lista"> 5. Arduino Uno </h3>
+<p class="listah3"> O modelo <strong>Uno</strong> é o mais conhecido e o mais indicado para quem está começando agora pois possui uma boa capacidade de processamento, 
+uma simples utilização com seus periféricos e uma simples linguagem de programação que se assemelha com <strong>C++</strong>. 
+Faremos um post exclusivo falando com mais detalhes sobre ele. </p>
+<img src="UNO.jpg" width="300" height="300">
+
+<br>
+
+<h3 class"lista"> 6. Arduino Leonardo </h3>
+<p class="listah3"> O modelo <strong>Leonardo</strong> possui maior capacidade de processamento que a versão <strong>UNO</strong> e pode ser usado em projetos maiores, 
+<ins>porém não é indicado para quem está começando</ins>, pois essa placa tem uma comunicação serial diferente das demais sendo necessário que o usuário tenha o conhecimento 
+da sua linguagem de programação própria. </p>
+<img src="LEONARDO.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 7. Arduino Mega </h3>
+<p class="listah3"> O modelo <strong>Mega</strong> é conhecido pelo seu grande tamanho e por sua quantidade de pinos de entrada e saída. 
+É indicado para projetos grandes por conta da sua  uma excelente capacidade de memória, <ins>além disso é muito indicado para novos usuários.</ins> 
+A única desvantagem dele é preço, comumente ele custa o dobro do <strong>Arduino Uno</strong>. Além dessa versão, ele possui uma versão compacta que é o <strong>Arduino Mega 2560 pro mini</strong>. </p>
+<img src="MEGA.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 8. Arduino Lilypad </h3>
+<p class="listah3"> A família de placas <strong>LilyPad Arduino</strong>, existe quatro modelos, foi projetada para aplicações vestíveis. 
+Funciona com baterias recarregáveis ​​e permite fácil conexão com sensores e atuadores desenvolvidos para uma fácil integração em roupas e tecidos. 
+O <strong>LilyPad Arduino</strong>, o <strong>LilyPad Arduino Simple</strong> e o <strong>LilyPad Arduino Simple Snap</strong> são diferentes das placas Arduino habituais porque precisam de uma 
+interface <em>USB</em> para <em>Serial</em> para serem programadas. </p>
+<img src="LILYPAD.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 9. Arduino Duo </h3>
+<p class="listah3"> O modelo <strong>Duo</strong> é conhecido por ter super poderes. 
+Ele é do mesmo tamanho e possui e mesma quantidade de portadas do <strong>Arduino Mega</strong>, mas o que o torna especial é o seu incrível processador <em>ARM</em> de 32 <em>bits</em>. </p>
+<img src="DUO.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 10. Arduino Yun </h3>
+<p class="listah3"> O modelo <strong>Yun</strong> (Yun significa nuvem em chinês) é basicamente o <strong>Arduino Leronado</strong> com 
+sistema poderoso <em>wireless</em> rodando <em>Linux Wifi</em>. É ideal para projetos que precisam se conectar e interagir com servidores da <em>web</em> ou redes. </p>
+<img src="YUN.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 11. Arduino Esplora </h3>
+<p class="listah3"> O modelo <strong>Esplora</strong> parece um controlador de videogame e você pode utilizá-lo para controlar o 
+computador como se fosse um <em>mouse</em> ou um teclado. Ele se diferente das outras placas por possui entradas e saídas já conectadas à placa e 
+por conta disso é diferente programá-lo, ele possui sua própria biblioteca especialmente para facilitar a leitura de entradas e de gravação de saídas. </p>
+<img src="ESPLORA.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 12. Arduino Robot </h3>
+<p class="listah3"> O modelo <strong>Robot</strong> vem completo, possui dois processadores (um em cada placa) que não precisam de processadores secundário 
+pois ambos os têm comunicação <em>USB</em>. Junto a ele já vem incluso rodas, alto falante, <em>display</em> de <em>LCD</em> colorido, Leitor de cartão <em>SD</em>, teclado de 5 teclas, 
+compartimento da bateria AA 4 alcalinas ou <em>NiMH</em> recarregáveis, sensores IR e muitos dos seus pinos são mapeados para sensores e controladores de motores. </p>
+<img src="ROBOT.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 13. Arduino Ethernet </h3>
+<p class="listah3"> O modelo <strong>Ethernet</strong> tem embutido em sua placa um network <strong>Ethernet</strong>, os pinos 10, 11, 12 e 13 são reservados 
+exclusivamente para a interface com o módulo <strong>Ethernet</strong> além disso, possui conexão Rj45 para conectar o cabo diretamente à placa. </p>
+<img src="ETHERNET.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 14. Arduino Pro </h3>
+<p class="listah3"> O modelo <strong>Pro</strong> é destinado para instalação semi-permanente, por esse motivo a placa vem 
+sem conectores pré-montado, permitindo o uso de vários tipos de conectores ou mesmo a ligação de fios diretamente 
+na placa ainda assim a pinagem é compatível com os shields <strong>Arduino</strong>. </p>
+<img src="PRO.jpg" width="300" height"300">
+
+<br>
+
+<h3 class"lista"> 15. Arduino Tre </h3>
+<p class="listah3"> O modelo <strong>Tre</strong> ou o Arduino ” Tre chique ” é incrível, ele está mais para um <strong>pi <em>raspberry</em></strong> do que para um Arduino. 
+O <strong>Tre</strong> é baseado no processador de 1 GHz com nada menos que 512 MB de memória <em>RAM DDR3</em>, saída de som, saída <em>HDMI</em>, <em>USB Host</em> + dispositivos. </p>
+<img src="TRE.png" width="300" height"300">
+
+<br>
+
+<p> Comparação entre Arduinos apresentados: </p>
+<img src="tabelaarduinos.jpg" width="621" height"638">
+
+<br>
+
+<h3> Sensores e Atuadores </h3>
+<p> Apenas a placa <strong>Arduino</strong> não é o suficiente para fazer pequenos projetos, mas se você estiver afim de implementar automatizar o seu 
+projeto será necessário usar sensores para fornecer informações de entrada e atuadores para excetuar uma resposta. </p>
+<p> <ins>Sensor de presença, sensor de temperatura, sensor de peso e sensor de luminosidade</ins> são exemplos de dispositivo que fornecem informações de entrada ao <strong>Arduino</strong>. </p>
+<img src="sensorpresenca.jpg" class="central" width=300" height"300">
+<figcaption>Exemplo de entrada: Sensor de presença</figcaption>
+<br>
+<p> Relé, motor, <em>buzzer</em> e <em>display</em> são exemplos de dispositivos que o Arduino envia uma saída para executarem uma resposta. </p>
+<img src="servomotor.jpg" class="central" width=300" height"300">
+<figcaption>Exemplo de atuador: Servo motor</figcaption>
+
+<br>
+
+<h3> Módulos e Shields </h3>
+<p> Os módulos e os <em>shields</em> têm como objetivo de simplificar e de aumentar a funcionalidade de uma placa arduino com uma facilidade de conexão. 
+Há muitos no mercado mas como exemplo podemos citar o módulo de reconhecimento de voz, módulo <em>MP3</em>, módulo <em>Wireless</em>, <em>shield ethernet</em>, <em>shield LCD e shield joystick</em>. </p>
+<img src="modulovoz.jpg" class="central" width=300" height"300">
+<figcaption>Exemplo de módulo: Módulo reconhecimento de voz</figcaption>
+<img src="joystickshield.jpg" class="central" width=300" height"300">
+<figcaption>Exemplo de shield: Shield Joystick</figcaption>
+
+<h3>O que é Arduino original e compatível, e quais as diferenças?</h3>
+<p> <strong>Arduino original</strong> como o próprio nome indica é a placa de Arduino <ins>fabricada na Itália pela empresa que criou a plataforma Arduino</ins>, 
+mas como essa criação foi utilizada a licença mais flexível que permite que qualquer um possa copiar as placas similars,
+ foi dai que surgiram as versões compatíveis, que fazem o mesmo, ou pelo menos espera-se que façam o mesmo que a placa original faça,  
+ <ins>mas sem a marca Arduino.</ins> </p>
+</html>
