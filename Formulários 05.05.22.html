@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Submit/Reset/Print </h2>
+<form>
+  <label for=nome1> Nome: </label> <br>
+    <input type="text" id=nome1 name="Nome">
+  <br>
+  <label for=sobre> Sobrenome: </label> <br>
+    <input type="text" id=sobre name="Sobrenome">
+  <br>
+  <label for="dt_nascimento"> Data e Hora de Nascimento: </label> <br>
+    <input type="time" id="dt_nascimento" name="hora_chamada" value="">
+  <br>
+  <label for=dt_contrato> Data de Contratação: </label><br>
+    <input type="month" id=dt_contrato name="contrato" value="">
+  <br>
+  <label for"senha> Senha: </label><br>
+    <input type="password" id=senha name="Senha" value"">
+  <br>
+  <label for="email"> e-mail: </label><br>
+    <input type="email" id=email name="email" value"">
+  <br>
+  <label for="qtd"> Quantidade: </label><br>
+    <input type="number" id=qtd name="qtd" min="1" max="10">
+  <br>
+  <br>
+   <input type="submit" value="Enviar">
+   <input type="reset" value="Limpar">
+   <input type="button" value="Imprimir" onclick="print()">
+</form>
+
+<h2> Textarea </h2>
+
+<form>
+  <label for="area"> Digite sua opinião aqui: </label> <br>
+    <textarea id="area" name="message" rows="10" cols="30"> </textarea> <br> <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
