@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url("background.jpg");
+  background-position: top;
+  background-size: 100%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+
+div {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid red;
+  font-family: "Arial Rounded MT Black";
+  height: 45px;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+li:last-child {
+border-right: none;
+float: right;
+}
+
+div {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid red;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+li:last-child {
+border-right: none;
+float: right;
+}
+
+.foto {
+  background: #880808;
+  padding: 5px;
+  float: left;
+  margin: 35px;
+  text-align: center;
+}
+
+.centralizar {
+  width: 91%;
+  margin: auto;
+}
+
+p.poster {
+  color: #ffffff;
+  font-family: "Bauhaus 93 Regular";
+  text-align: center;
+}
+
+input[type=button] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+}
+</style>
+<body>
+
+<ul>
+  <Li><a href="Cinema.html"><img src="logor.png" width="40" height="20"></a></li>
+  <li><a href="Programação.html">PROGRAMAÇÃO</a></li> 
+  <li><a href="Cardapio.html">CARDÁPIO</a></li>
+  <li><a href="Promoções.html">PROMOÇÕES</a></li> 
+  <li><a href="FAQ.html">Perguntas Frequentes (FAQ)</a></li> <br>
+</ul>
+
+<div class="centralizar">
+
+   <div class="foto">
+   <img src="drestranho.jpg" width="400" height="600">
+   <p class="poster"> Doutor Estranho no Multiverso da Loucura </p>
+   <input type="button" value="Reservar Poltrona">
+   <input type="button" value="Horários de Exibição">
+   </div>
+   
+   <div class="foto">
+   <img src="animais.jpeg" width="400" height="600">
+   <p class="poster"> Animais Fantásticos: Os Segredos de Dumbledore </p>
+   <input type="button" value="Reservar Poltrona">
+   <input type="button" value="Horários de Exibição">
+   </div>
+   
+   <div class="foto">
+   <img src="batman.jpeg" width="400" height="600">
+   <p class="poster"> Batman (2022) </p>
+   <input type="button" value="Reservar Poltrona">
+   <input type="button" value="Horários de Exibição">
+   </div>
+   
+
+</div>
+
+</body>
+
+</head>
+</html>
