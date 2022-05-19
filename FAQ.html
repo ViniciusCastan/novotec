@@ -3,9 +3,205 @@
 <head>
 <style>
 
+body {
+  background-image: url("background.jpg");
+  background-position: top;
+  background-size: 100%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+
+div {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid red;
+  font-family: "Arial Rounded MT Black";
+  height: 45px;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+li:last-child {
+border-right: none;
+float: right;
+}
+
+div {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid red;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+li:last-child {
+border-right: none;
+float: right;
+}
+
+.foto {
+  background: #880808;
+  padding: 5px;
+  float: left;
+  margin: 35px;
+  text-align: center;
+}
+
+.centralizar {
+  text-align: center;
+  margin: 10px;
+}
+
+p.poster {
+  color: #ffffff;
+  font-family: "Bauhaus 93 Regular";
+  text-align: center;
+}
+
+input[type=button] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+h1.lanc {
+text-align: center;
+font-family: "Arial Rounded MT Black";
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
+h1.bemvindo {
+text-align: center;
+font-family: "Arial Rounded MT Black";
+margin-right: 735px;
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
+h1.loc {
+text-align: center;
+font-family: "Arial Rounded MT Black";
+margin-right: 750px;
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
+h2.loc {
+text-align: center;
+font-family: "Arial Rounded MT Black";
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
+h2.faq {
+text-align: left;
+margin-left: 60px;
+font-family: "Arial Rounded MT Black";
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
+h1.sup {
+text-align: center;
+font-family: "Arial Rounded MT Black";
+color: white;
+text-shadow: 1px 1px 2px black;
+}
+
 </style>
 <body>
 
+<ul>
+  <Li><a href="Cinema.html"><img src="logor.png" width="40" height="20"></a></li>
+  <li><a href="Programação.html">PROGRAMAÇÃO</a></li> 
+  <li><a href="Cardapio.html">CARDÁPIO</a></li>
+  <li><a href="FAQ.html">Perguntas Frequentes (FAQ)</a></li> <br>
+</ul>
+<br><br><br>
+<div class="centralizar">
+
+<img src="faq.png">
+<h2 class="faq"> 1. Posso levar alimentos de fora para dentro das salas de cinema? </h2>
+<h2 class="faq"> R: Sim, desde que sejam alimentos que existam dentro dos estabelecimentos do PrudenShopping. </h2> <br>
+<h2 class="faq"> 2. Perdi meu ingresso ou não tive acesso a ele. Como faço para ver meu filme? </h2>
+<h2 class="faq"> R: Apresente RG ou CPF ao bilheteiro e informe a situação. Ele irá verificar no sistema e lhe orientar corretamente. </h2> <br>
+<h2 class="faq"> 3. Como funciona a meia entrada? </h2>
+<h2 class="faq"> R: A meia entrada é valida para todos aqueles que são: <br>
+- Estudantes legalmente registrados (mediante apresentação do comprovante). <br>
+- Crianças de até 12 anos de idade. <br>
+- Idosos com mais de 60 anos.
+- Pessoas com deficiência (física, mental, auditiva, visual, hanseníase, transplantados, entre outros) e seu acompanhante, quando necessário. <br>
+- Jovens de baixa renda de até 29 anos, mediante a apresentação da Identidade Jovem. </h2> <br><br>
+
+<h1 class="sup"> Para mais informações, fale com o nosso suporte: </h1>
+<h2 class="faq"> E-mail: cinemax@suporte.net </h2>
+<h2 class="faq"> Telefone: (18) 3222-0000 ou Whatsapp (18) 99669-0000  (Segunda a Sexta das 09h00 as 21h00)
+
+</div>
 </body>
 </head>
 </html>
